@@ -14,7 +14,7 @@ ENV LC_ALL de_DE.UTF-8
 
 #Install Ruby
 RUN apt-get update
-RUN apt-get -y install ruby2.0
+RUN apt-get -y install ruby2.0 libmysqlclient-dev ruby2.0-dev 
 
 RUN rm /usr/bin/ruby /usr/bin/gem /usr/bin/irb /usr/bin/rdoc /usr/bin/erb
 RUN ln -s /usr/bin/ruby2.0 /usr/bin/ruby
